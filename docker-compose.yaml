@@ -1,0 +1,13 @@
+version: '3'
+services:
+  lugrec:
+    container_name: lugslotbooking
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8012:80"
+    networks:
+      - mynet
+networks:
+  mynet:
